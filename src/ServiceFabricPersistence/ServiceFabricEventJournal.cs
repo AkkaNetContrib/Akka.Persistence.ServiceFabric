@@ -55,7 +55,7 @@ namespace ServiceFabricPersistence
         }
         public Task DeleteMessagesToAsync(long toSequenceNr, bool isPermanent)
         {
-                foreach (var e in this.State.eventStore.Where(o => o.Key > toSequenceNr))
+                foreach (var e in this.State.eventStore.Where(o => o.Key <= toSequenceNr))
                 {
                 if (!isPermanent)
                     e.Value.IsDeleted = true;
