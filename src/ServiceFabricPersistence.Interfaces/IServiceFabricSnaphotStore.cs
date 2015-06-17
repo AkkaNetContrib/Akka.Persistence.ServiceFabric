@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved. 
+// Licensed under the Apache 2 License. 
+
+using System;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using Microsoft.ServiceFabric.Actors;
-
 
 namespace ServiceFabricPersistence.Interfaces
 {

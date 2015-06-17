@@ -1,10 +1,14 @@
-﻿using Akka.Persistence.ServiceFabric.Tests;
+﻿//-----------------------------------------------------------------------
+// <copyright file="Program.cs" company="Akka.NET Project">
+//     Copyright (C) 2009-2015 Typesafe Inc. <http://www.typesafe.com>
+//     Copyright (C) 2013-2015 Akka.NET project <https://github.com/akkadotnet/akka.net>
+//     Copyright (C) Nethouse Örebro AB <http://akka.nethouse.se>
+// </copyright>
+//-----------------------------------------------------------------------
+
+using Akka.Persistence.ServiceFabric.Tests;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Akka.Persistence.ServiceFabric.X64TestRunner
 {

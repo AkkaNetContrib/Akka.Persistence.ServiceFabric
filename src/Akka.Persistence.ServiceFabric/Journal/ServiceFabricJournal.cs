@@ -1,19 +1,23 @@
+//-----------------------------------------------------------------------
+// <copyright file="ServiceFabricSnapshotStore.cs" company="Akka.NET Project">
+//     Copyright (C) 2009-2015 Typesafe Inc. <http://www.typesafe.com>
+//     Copyright (C) 2013-2015 Akka.NET project <https://github.com/akkadotnet/akka.net>
+//     Copyright (C) Microsoft Corporation. All rights reserved. 
+//     Copyright (C) Nethouse Örebro AB <http://akka.nethouse.se>
+// </copyright>
+//-----------------------------------------------------------------------
+
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Akka.Persistence.Journal;
-using Microsoft.ServiceFabric.Services;
 using Microsoft.ServiceFabric.Actors;
 using ServiceFabricPersistence.Interfaces;
 
-
-
 namespace Akka.Persistence.ServiceFabric.Journal
 {
-    
+
     /// <summary>
     /// Persistent journal actor using SQL Server as persistence layer. It processes write requests
     /// one by one in synchronous manner, while reading results asynchronously.

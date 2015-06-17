@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Akka.Persistence.ServiceFabric.X64TestRunner")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft Corporation")]
+[assembly: AssemblyCompany("Nethouse Örebro AB")]
 [assembly: AssemblyProduct("Akka.Persistence.ServiceFabric.X64TestRunner")]
-[assembly: AssemblyCopyright("Copyright © Microsoft Corporation 2015")]
+[assembly: AssemblyCopyright("© Nethouse Örebro AB")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

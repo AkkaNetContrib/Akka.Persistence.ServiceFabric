@@ -1,4 +1,7 @@
-﻿using ServiceFabricPersistence.Interfaces;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved. 
+// Licensed under the Apache 2 License. 
+
+using ServiceFabricPersistence.Interfaces;
 using Microsoft.ServiceFabric.Actors;
 using System;
 using System.Collections.Generic;

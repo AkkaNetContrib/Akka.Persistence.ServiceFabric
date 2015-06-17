@@ -1,10 +1,14 @@
-﻿using System;
+﻿//-----------------------------------------------------------------------
+// <copyright file="ServiceFabricEventJournal.cs" company="Microsoft Corporation">
+//     Copyright (C) Microsoft Corporation. All rights reserved. 
+//     Copyright (C) Nethouse Örebro AB <http://akka.nethouse.se>
+// </copyright>
+//-----------------------------------------------------------------------
+
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using ServiceFabricPersistence.Interfaces;
-using Microsoft.ServiceFabric;
 using Microsoft.ServiceFabric.Actors;
 
 namespace ServiceFabricPersistence

@@ -14,7 +14,7 @@ The plug-in is composed of two Visual Studio projects:
     * ServiceFabricEventJournal: this is the project that contains the implementation of the Service Fabric service. Service Fabric tools for Visual Studio are supported on VS2015 only so it needs to be a separate project
 
 ## Status
-This is very preliminary version of the plug-in and used mainly to test the intial design based on a Reliable Actors service. Only the Journal interface has been implemented and basic testing has been done with the PersistenceSample app.
+This is very preliminary version V0.2 of the plug-in and used mainly to test the intial design based on a Reliable Actors service. Only the Journal interface has been implemented and basic testing has been done with the PersistenceSample app.
  
 ## TODO
 

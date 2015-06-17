@@ -1,14 +1,13 @@
-﻿using System;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved. 
+// Licensed under the Apache 2 License. 
+
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Actors;
 
 namespace ServiceFabricPersistence.Interfaces
 {
-
     [DataContract]
     public class JournalEntry
     {

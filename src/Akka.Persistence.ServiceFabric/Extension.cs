@@ -1,4 +1,13 @@
-﻿using System;
+﻿//-----------------------------------------------------------------------
+// <copyright file="Extension.cs" company="Akka.NET Project">
+//     Copyright (C) 2009-2015 Typesafe Inc. <http://www.typesafe.com>
+//     Copyright (C) 2013-2015 Akka.NET project <https://github.com/akkadotnet/akka.net>
+//     Copyright (C) Microsoft Corporation. All rights reserved. 
+//     Copyright (C) Nethouse Örebro AB <http://akka.nethouse.se>
+// </copyright>
+//-----------------------------------------------------------------------
+
+using System;
 using Akka.Actor;
 using Akka.Configuration;
 

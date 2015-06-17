@@ -1,4 +1,7 @@
-﻿using Microsoft.ServiceFabric.Actors;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved. 
+// Licensed under the Apache 2 License. 
+
+using Microsoft.ServiceFabric.Actors;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
