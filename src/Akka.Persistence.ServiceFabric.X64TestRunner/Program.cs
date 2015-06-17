@@ -26,7 +26,8 @@ namespace Akka.Persistence.ServiceFabric.X64TestRunner
             RunTest(test => test.Journal_should_return_a_highest_sequence_number_equal_zero_if_actor_did_not_written_any_messages_yet());
             RunTest(test => test.Journal_should_return_a_highest_seq_number_greater_than_zero_if_actor_has_already_written_messages_and_message_log_is_not_empty());
 
-
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("All tests completed.");
             Console.ReadLine();
         }
 
