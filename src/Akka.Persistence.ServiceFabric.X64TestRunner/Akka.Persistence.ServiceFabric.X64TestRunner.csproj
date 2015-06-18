@@ -52,6 +52,10 @@
       <HintPath>..\packages\Akka.TestKit.1.0.3\lib\net45\Akka.TestKit.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Akka.TestKit.Xunit2, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akka.TestKit.Xunit2.1.0.3\lib\net45\Akka.TestKit.Xunit2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Google.ProtocolBuffers, Version=2.4.1.521, Culture=neutral, PublicKeyToken=55f7125234beb589, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.ProtocolBuffers.2.4.1.521\lib\net40\Google.ProtocolBuffers.dll</HintPath>
       <Private>True</Private>
