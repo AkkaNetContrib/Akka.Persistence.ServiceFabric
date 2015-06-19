@@ -10,4 +10,14 @@
       <Parameter Name="MaxAsyncCommitDelayInMilliseconds" Value="100" />
       <Parameter Name="MaxVerPages" Value="32768" />
    </Section>
+   <Section Name="ServiceFabricSnapshotStoreActorServiceReplicatorConfig">
+      <Parameter Name="ReplicatorEndpoint" Value="ServiceFabricSnapshotStoreActorServiceReplicatorEndpoint" />
+   </Section>
+   <Section Name="ServiceFabricSnapshotStoreActorServiceReplicatorSecurityConfig">
+      <Parameter Name="CredentialType" Value="None" />
+   </Section>
+   <Section Name="ServiceFabricSnapshotStoreActorServiceLocalStoreConfig">
+      <Parameter Name="MaxAsyncCommitDelayInMilliseconds" Value="100" />
+      <Parameter Name="MaxVerPages" Value="32768" />
+   </Section>
 </Settings>

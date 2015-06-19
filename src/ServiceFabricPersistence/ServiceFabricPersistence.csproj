@@ -72,6 +72,8 @@
     <Compile Include="ServiceFabricEventJournalState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ActorEventSource.cs" />
+    <Compile Include="ServiceFabricSnapshotStore.cs" />
+    <Compile Include="ServiceFabricSnapshotStoreState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PackageRoot\ServiceManifest.xml" />

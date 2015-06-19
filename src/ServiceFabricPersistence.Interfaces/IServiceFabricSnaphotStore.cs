@@ -1,10 +1,13 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved. 
-// Licensed under the Apache 2 License. 
-
+// Licensed under the Apache 2 License.  
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using Microsoft.ServiceFabric.Actors;
+
 
 namespace ServiceFabricPersistence.Interfaces
 {
@@ -18,23 +21,28 @@ namespace ServiceFabricPersistence.Interfaces
         [DataMember]
         public DateTime Timestamp{ get; set; }
         [DataMember]
-        public readonly string PayloadType;
+        public readonly string SnapshotType;
         [DataMember]
-        public readonly byte[] Payload;
+        public readonly byte[] Snapshot;
 
-        public SnapshotEntry(string persistenceId, long sequenceNr, DateTime timestamp, string payloadType, byte[] payload)
+        public SnapshotEntry(string persistenceId, long sequenceNr, DateTime timestamp, string snapshotType, byte[] snapshot)
         {
             PersistenceId = persistenceId;
             SequenceNr = sequenceNr;
             Timestamp = timestamp;
-            PayloadType = payloadType;
-            Payload = payload;
+            SnapshotType = snapshotType;
+            Snapshot = snapshot;
         }
     }
 
-    public interface IServiceFabricSnaphotStore : IActor
+    public interface IServiceFabricSnapshotStore : IActor
     {
-       Task<SnapshotEntry> selectSnapshotAsync(long maxSequenceNr, DateTime maxTimeStamp);
+       Task<SnapshotEntry> SelectSnapshotAsync(long maxSequenceNr, DateTime maxTimeStamp);
+        Task WriteSnapshotAsync(SnapshotEntry s);
+        Task DeleteSnapshotAsync(long maxSequenceNr, DateTime maxTimeStamp);
+        Task DeleteSnapshotManyAsync(long maxSequenceNr, DateTime maxTimeStamp);
+
+
 
 
     }

@@ -1,6 +1,5 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved. 
-// Licensed under the Apache 2 License. 
-
+// Licensed under the Apache 2 License.  
 using System;
 using System.Diagnostics;
 using System.Fabric;
@@ -18,6 +17,7 @@ namespace ServiceFabricPersistence
                 using (FabricRuntime fabricRuntime = FabricRuntime.Create())
                 {
                     fabricRuntime.RegisterActor(typeof(ServiceFabricEventJournal));
+                    fabricRuntime.RegisterActor(typeof(ServiceFabricSnapshotStore));
 
                     Thread.Sleep(Timeout.Infinite);
                 }
