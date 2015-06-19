@@ -114,7 +114,6 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="README.md" />
     <EmbeddedResource Include="service-fabric.conf" />
   </ItemGroup>
   <ItemGroup>
